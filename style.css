@@ -30,12 +30,12 @@ nav {
 
 #second {
   background-color: black;
-  height: 60vh;
+  /* height: 800px; */
 }
 
 #third {
   background-color: black;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 #profile {
@@ -46,6 +46,7 @@ nav {
 html,
 body {
   font-family: "Oswald", sans-serif;
+  box-sizing: content-box;
 }
 
 code {
