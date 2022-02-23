@@ -1,3 +1,26 @@
+nav {
+  background: hsla(46, 100%, 50%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(46, 100%, 50%, 1) 0%,
+    hsla(46, 100%, 50%, 1) 80%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(46, 100%, 50%, 1) 0%,
+    hsla(46, 100%, 50%, 1) 80%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(46, 100%, 50%, 1) 0%,
+    hsla(46, 100%, 50%, 1) 80%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FDC100", endColorstr="#FEC200", GradientType=1 );
+}
 #first {
   background-image: url("https://images.unsplash.com/photo-1645168159605-af46f85a1dac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
   background-repeat: no-repeat;
@@ -6,15 +29,25 @@
 }
 
 #second {
-    background-color: black;
-    /* height: 40vh; */
+  background-color: black;
+  height: 60vh;
+}
+
+#third {
+  background-color: black;
+  height: 100vh;
 }
 
 #profile {
-    height: 300px;
-    width: 300px;
+  height: 300px;
+  width: 300px;
 }
 
-html, body {
-    font-family: 'Oswald', sans-serif;
+html,
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+code {
+    color: black;
 }

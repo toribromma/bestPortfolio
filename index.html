@@ -22,7 +22,7 @@
     <title>Tori Bromma</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light px-3">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Tori Bromma</a>
         <button
@@ -39,35 +39,31 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
+              <a class="nav-link" aria-current="page" href="#second">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#third">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#scrollspyHeading3">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
+              <a class="nav-link" href="#scrollspyHeading4">Resume</a>
             </li>
           </ul>
           <span class="navbar-text"> Full Stack Web Developer (MERN) </span>
         </div>
       </div>
     </nav>
-    <div class="container-fluid main">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="container-fluid main">
       <div id="first" class="row">
-        <h1 class="text-center col-12 display-1 p-5">
+        <h1 class="text-center col-12 display-1 p-5 font-monospace">
           Tori Bromma | Full Stack Web Developer
         </h1>
-        <!-- <h2 class="col-6 display-1 mt-3">
-          Full Stack Web Developer
-        </h2> -->
       </div>
-      <div id="second" class="row">
-        <div class="text-center text-white col-12">
+      <div id="second" id="scrollspyHeading1" class="row text-center text-white ">
           <h3 class="display-1 p-3">About Me</h3>  
-          <img id="profile" class="rounded my-3" src="assets/tori.jpg">
+          <img id="profile" class="rounded mx-auto d-block my-3" src="assets/tori.jpg">
           <p class="lead py-4">
             I am an aspiring Full Stack Web Developer specializing in the MERN
             stack <br />
@@ -78,7 +74,10 @@
             Please enjoy my website. :)
           </p>
         </div>
-      </div>
+    </div>
+    <div id="third" class="row text-center text-white">
+        <h3 class="display-1 p-3 mt-5 col-12">Portfolio</h3>  
+        
     </div>
   </body>
 </html>
