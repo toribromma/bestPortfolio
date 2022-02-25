@@ -25,7 +25,7 @@
     <title>Tori Bromma</title>
   </head>
   <body>
-    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light px-3">
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light px-3 fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Tori Bromma</a>
         <button
@@ -48,10 +48,10 @@
               <a class="nav-link" href="#third">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#scrollspyHeading3">Contact</a>
+              <a class="nav-link" href="#fourth">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#scrollspyHeading4">Resume</a>
+              <!-- <a class="nav-link" href="#scrollspyHeading4">Resume</a> -->
             </li>
           </ul>
           <span class="navbar-text"> Full Stack Web Developer (MERN) </span>
@@ -69,12 +69,8 @@
           Tori Bromma | Full Stack Web Developer
         </h1>
       </div>
-      <div
-        id="second"
-        id="scrollspyHeading1"
-        class="row text-center text-white"
-      >
-        <h3 class="display-1 p-3">About Me</h3>
+      <div id="second" class="row text-center text-white">
+        <h1 class="display-1 p-3">About Me</h1>
         <img
           id="profile"
           class="rounded mx-auto d-block my-3"
@@ -90,41 +86,107 @@
           Please enjoy my website. :)
         </p>
       </div>
-    </div>
-    <div id="third" class=" text-white">
-      <h3 class="display-1 text-center py-5">Portfolio</h3>
-      <div class="row py-5 mx-0">
-        <div class="card col-4 m-1 p-1" style="width: 30rem">
+      <div id="third" class="text-white row">
+        <h1 class="display-1 text-center py-5 col-12">Portfolio</h1>
+        <div class="card col-4 mx-auto my-1 p-1" style="width: 24rem">
           <img src="assets/codingquiz.png" class="card-img-top" alt="..." />
           <div class="card-body text-dark">
             <h5 class="card-title">Code Quiz</h5>
             <p class="card-text">
-              A multiple choice timed coding quiz with high scores leaderboard. Getting a question wrong results in a time loss penalty.
+              A multiple choice timed coding quiz with high scores leaderboard.
+              Getting a question wrong results in a time loss penalty.
             </p>
-            <a href="https://toribromma.github.io/coding-quiz/" class="btn btn-primary">Live Demo</a>
+            <a
+              href="https://toribromma.github.io/coding-quiz/"
+              class="btn btn-primary"
+              >Live Demo</a
+            >
           </div>
         </div>
-        <div class="card col-4 m-1 p-1" style="width: 30rem">
-          <img src="assets//passwordgenerator.png" class="card-img-top" alt="..." />
+        <div class="card col-4 mx-auto my-1 p-1" style="width: 24rem">
+          <img
+            src="assets//passwordgenerator.png"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body text-dark">
             <h5 class="card-title">Password Generator</h5>
             <p class="card-text">
-                For companies that handle large amounts of sensitive data, weak passwords can pose a real security threat. An application that can generate strong passwords quickly and effortlessly saves employees time and ensures secure access to data.
+              For companies that handle large amounts of sensitive data, weak
+              passwords can pose a real security threat. An application that can
+              generate strong passwords quickly and effortlessly saves employees
+              time and ensures secure access to data.
             </p>
-            <a href="https://toribromma.github.io/passwordGenerator/" class="btn btn-primary">Live Demo</a>
+            <a
+              href="https://toribromma.github.io/passwordGenerator/"
+              class="btn btn-primary"
+              >Live Demo</a
+            >
           </div>
         </div>
-        <div class="card col-4 m-1 p-1" style="width: 30rem">
-          <img src="assets/workdayscheduler.png" class="card-img-top" alt="..." />
+        <div class="card col-4 mx-auto my-1 p-1" style="width: 24rem">
+          <img
+            src="assets/workdayscheduler.png"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body text-dark">
             <h5 class="card-title">Work Day Scheduler</h5>
             <p class="card-text">
-                Poor time management can result in missed meetings and deadlines or create the appearance of unprofessionalism. A daily planner allows employees to see their day at a glance, schedule time effectively, and improve productivity.
+              Poor time management can result in missed meetings and deadlines
+              or create the appearance of unprofessionalism. A daily planner
+              allows employees to see their day at a glance, schedule time
+              effectively, and improve productivity.
             </p>
-            <a href="https://toribromma.github.io/workDayScheduler/" class="btn btn-primary">Live Demo</a>
+            <a
+              href="https://toribromma.github.io/workDayScheduler/"
+              class="btn btn-primary"
+              >Live Demo</a
+            >
           </div>
         </div>
       </div>
+      <div id="fourth" class="text-white row text-center py-5">
+        <h1 class="display-1 col-12 ">Contact Me</h1>
+        <form
+          id="contact"
+          action="https://formsubmit.co/ff16387c3fb552034d2a04a2c1f9a1cb"
+          method="POST"
+          class="d-block mx-auto p-5"
+        >
+          <div class="form-group">
+            <label class="h3" for="name">Name</label>
+            <input
+              class="form-control my-3"
+              type="text"
+              placeholder="Name"
+              name="name"
+            />  
+          </div>
+          <div class="form-group">
+            <label class="h3" for="subject">Subject</label>
+            <input
+              class="form-control my-3"
+              type="text"
+              placeholder="Subject"
+              name="subject"
+            />
+          </div>
+          <div class="form-group">
+            <label class="h3" for="message">Message</label>
+            <textarea
+              placeholder="message"
+              name="body"
+              class="form-control my-3"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <div class="control">
+              <button type="submit" class="btn btn-light m-5">Submit</button>
+            </div>
+          </div>
+        </form>
+    </div>
   </body>
   <!-- <script src="script.js"></script> -->
 </html>
