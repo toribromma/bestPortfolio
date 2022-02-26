@@ -28,12 +28,6 @@ nav {
   height: 100vh;
 }
 
-#second, #third, #fourth, #fifth {
-  background-color: black;
-  
-}
-
-
 #profile {
   height: auto;
   width: 300px;
@@ -43,6 +37,7 @@ html,
 body {
   font-family: "Oswald", sans-serif;
   /* box-sizing: content-box; */
+  background-color: black;
 }
 
 code {

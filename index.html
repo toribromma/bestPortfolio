@@ -27,7 +27,7 @@
   <body>
     <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light px-3 fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Tori Bromma</a>
+        <a class="navbar-brand" href="#first">Tori Bromma</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -51,7 +51,7 @@
               <a class="nav-link" href="#fourth">Contact</a>
             </li>
             <li class="nav-item">
-              <!-- <a class="nav-link" href="#scrollspyHeading4">Resume</a> -->
+              <a class="nav-link" href="#fifth">Resume</a>
             </li>
           </ul>
           <span class="navbar-text"> Full Stack Web Developer (MERN) </span>
@@ -65,12 +65,14 @@
       class="container-fluid main"
     >
       <div id="first" class="row">
-        <h1 class="text-center col-12 display-1 p-5">
+        <h1 class="text-center col-12 display-1 p-5 my-5">
           Tori Bromma | Full Stack Web Developer
         </h1>
       </div>
       <div id="second" class="row text-center text-white">
-        <h1 class="display-1 p-3">About Me</h1>
+        <h1 class="display-1 py-5 my-3 col-12">About Me</h1>
+      </div>
+      <div class="row text-center text-white">
         <img
           id="profile"
           class="rounded mx-auto d-block my-3"
@@ -83,12 +85,14 @@
           I enjoy learning new skills and challenge myself to solve problems.
           <br />
           I am a go-getter and work hard to achieve every task. <br />
-          Please enjoy my website. :)
+          Please enjoy my website and take a look at my projects.
         </p>
       </div>
       <div id="third" class="text-white row">
-        <h1 class="display-1 text-center py-5 col-12">Portfolio</h1>
-        <div class="card col-4 mx-auto my-1 p-1" style="width: 24rem">
+        <h1 class="display-1 text-center py-5 col-12 my-3">Portfolio</h1>
+      </div>
+      <div class="row justify-content-center">
+        <div class="card col-4 m-2" style="width: 24rem">
           <img src="assets/codingquiz.png" class="card-img-top" alt="..." />
           <div class="card-body text-dark">
             <h5 class="card-title">Code Quiz</h5>
@@ -103,7 +107,7 @@
             >
           </div>
         </div>
-        <div class="card col-4 mx-auto my-1 p-1" style="width: 24rem">
+        <div class="card col-4 m-2" style="width: 24rem">
           <img
             src="assets//passwordgenerator.png"
             class="card-img-top"
@@ -124,7 +128,7 @@
             >
           </div>
         </div>
-        <div class="card col-4 mx-auto my-1 p-1" style="width: 24rem">
+        <div class="card col-4 m-2" style="width: 24rem">
           <img
             src="assets/workdayscheduler.png"
             class="card-img-top"
@@ -147,7 +151,9 @@
         </div>
       </div>
       <div id="fourth" class="text-white row text-center py-5">
-        <h1 class="display-1 col-12 ">Contact Me</h1>
+        <h1 class="display-1 col-12 py-3">Contact Me</h1>
+      </div>
+      <div class="row text-white text-center">
         <form
           id="contact"
           action="https://formsubmit.co/ff16387c3fb552034d2a04a2c1f9a1cb"
@@ -187,6 +193,42 @@
           </div>
         </form>
     </div>
+    <div id="fifth" class="text-white row text-center py-5">
+      <h1 class="display-1 col-12 py-3">Resume</h1>
+    </div>
+    <div class="container">
+    <dl class="row text-white text-center">
+        <dt class="col-sm-12 col-md-6 display-4 mt-5">Education</dt>
+        <dd class="col-sm-12 col-md-6">
+          <dl class="row">
+            <dt class="col-sm-12 h3 my-5">
+              University of California, Irvine
+            </dt>
+            <dd class="h5 col-sm-12">
+              Full Stack Web Development Certificate 2020
+            </dd>
+            <dd class="h5 col-sm-12 mb-5">
+              Bachelor's in Arts, Political Science 2012
+            </dd>
+          </dl>
+        </dd>
+        
+        <dt class="col-sm-12 col-md-6 display-4 mt-5">Work Experience</dt>
+        <dd class="col-sm-12 col-md-6">
+          <dl class="row">
+            <dt class="col-sm-12 h3 my-5">
+              County of Orange Social Services
+            </dt>
+            <dd class="h5 col-sm-12">
+              Eligibility Technician
+            </dd>
+            <dd class="h5 col-sm-12 mb-5">
+              Oct 2013 - Present
+            </dd>
+          </dl>
+        </dd>
+    </dl>
+  </div>
   </body>
   <!-- <script src="script.js"></script> -->
 </html>
